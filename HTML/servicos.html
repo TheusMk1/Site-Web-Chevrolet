@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+      Serviços | Chevrolet
+    </title>
+    <link rel="stylesheet" href="../CSS/style.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="logo-chevrolet" href="index.html">
+        <img src="../img/Logos/NavBar/logo-removebg-preview.png" alt="Chevrolet">
+      </a>
+      <button class="mobile-menu" aria-label="Abrir menu">
+        ☰
+      </button>
+      <ul class="nav-links">
+        <li>
+          <a href="catalago_veiculos.html">
+            Nossos veículos
+          </a>
+        </li>
+        <li>
+          <a href="comprar.html">
+            Comprar
+          </a>
+        </li>
+        <li>
+          <a href="servicos.html">
+            Serviços
+          </a>
+        </li>
+        <li>
+          <a href="sobre.html">
+            Sobre a Chevrolet
+          </a>
+        </li>
+      </ul>
+      <div class="nav-acoes">
+        Iniciar sessão
+      </div>
+    </nav>
+    <main>
+      <header class="page-hero">
+        <h1>
+          Seu Chevrolet sempre pronto.
+        </h1>
+        <p>
+          Informações para cuidar do seu veículo com praticidade e segurança.
+        </p>
+      </header>
+      <section class="section" id="revisao">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">
+              Proprietários
+            </span>
+            <h2>
+              Serviços para cada etapa
+            </h2>
+          </div>
+        </div>
+        <div class="info-grid">
+          <article class="info-card">
+            <h3>
+              Revisão programada
+            </h3>
+            <p>
+              Consulte o manual e a rede autorizada para manter a manutenção em dia.
+            </p>
+            <a class="btn" href="#agendar">
+              Solicitar contato
+            </a>
+          </article>
+          <article class="info-card" id="seguranca">
+            <h3>
+              Recall e segurança
+            </h3>
+            <p>
+              Consulte informações importantes para manter seu veículo sempre seguro e em dia.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>
+              Peças e acessórios
+            </h3>
+            <p>
+              Prefira itens compatíveis e orientação de profissionais autorizados.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="section section--gray" id="agendar">
+        <form class="form-card" data-interest-form>
+          <h2>
+            Solicitar contato para revisão
+          </h2>
+          <div class="form-row">
+            <label>
+              Nome
+              <input required>
+            </label>
+            <label>
+              Telefone
+              <input required inputmode="tel">
+            </label>
+          </div>
+          <label>
+            Veículo
+            <select>
+              <option>
+                Onix
+              </option>
+              <option>
+                Tracker
+              </option>
+              <option>
+                Montana
+              </option>
+              <option>
+                Outro Chevrolet
+              </option>
+            </select>
+          </label>
+          <button class="btn">
+            Registrar solicitação
+          </button>
+          <p class="form-feedback" aria-live="polite">
+          </p>
+        </form>
+      </section>
+    </main>
+    <script src="../JavaScript/script.js">
+    </script>
+  </body>
+</html>

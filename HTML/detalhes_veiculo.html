@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+      Detalhes do veículo | Chevrolet
+    </title>
+    <link rel="stylesheet" href="../CSS/style.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="logo-chevrolet" href="index.html">
+        <img src="../img/Logos/NavBar/logo-removebg-preview.png" alt="Chevrolet">
+      </a>
+      <button class="mobile-menu" aria-label="Abrir menu">
+        ☰
+      </button>
+      <ul class="nav-links">
+        <li>
+          <a href="catalago_veiculos.html">
+            Nossos veículos
+          </a>
+        </li>
+        <li>
+          <a href="comprar.html">
+            Comprar
+          </a>
+        </li>
+        <li>
+          <a href="servicos.html">
+            Serviços
+          </a>
+        </li>
+        <li>
+          <a href="sobre.html">
+            Sobre a Chevrolet
+          </a>
+        </li>
+      </ul>
+      <div class="nav-acoes">
+        Iniciar sessão
+      </div>
+    </nav>
+    <nav class="detail-subnav">
+      <a href="catalago_veiculos.html">
+        ← Voltar ao catálogo
+      </a>
+      <div class="detail-tabs">
+        <a class="active" href="#modelo">
+          Modelo
+        </a>
+        <a href="#exterior">
+          Exterior
+        </a>
+        <a href="#interior">
+          Interior
+        </a>
+        <a href="#opcionais">
+          Opcionais
+        </a>
+      </div>
+    </nav>
+    <main>
+      <section class="detail-layout" id="modelo">
+        <div class="vehicle-image">
+          <img id="vehicle-image" src="" alt="Veículo Chevrolet">
+        </div>
+        <aside class="config-panel">
+          <h1 id="vehicle-price">
+            A partir de
+          </h1>
+          <p id="vehicle-description">
+          </p>
+          <div class="option-title">
+            Versões disponíveis
+          </div>
+          <div class="version-buttons" id="versions">
+          </div>
+          <div class="option-title">
+            Cores
+          </div>
+          <div class="color-buttons" id="colors">
+          </div>
+          <ul class="spec-list">
+            <li>
+              <strong>
+                Potência
+              </strong>
+              <span id="spec-power">
+              </span>
+            </li>
+            <li>
+              <strong>
+                Câmbio
+              </strong>
+              <span id="spec-transmission">
+              </span>
+            </li>
+            <li>
+              <strong>
+                Motor
+              </strong>
+              <span id="spec-engine">
+              </span>
+            </li>
+          </ul>
+          <a class="btn" id="buy-link" href="comprar.html">
+            Tenho interesse
+          </a>
+          <div class="buy-message" id="selection-message" aria-live="polite">
+          </div>
+        </aside>
+      </section>
+      <section class="details-extra">
+        <article class="tab-panel" id="exterior">
+          <h2>
+            Exterior
+          </h2>
+          <img id="exterior-image" style="max-width:100%;max-height:260px;object-fit:contain" alt="Vista externa do veículo">
+        </article>
+        <article class="tab-panel" id="interior">
+          <h2>
+            Interior
+          </h2>
+          <p id="interior-text">
+            Conforto e conectividade pensados para cada trajeto.
+          </p>
+        </article>
+        <article class="tab-panel" id="opcionais">
+          <h2>
+            Itens e opcionais
+          </h2>
+          <ul class="service-list" id="option-list">
+          </ul>
+        </article>
+      </section>
+    </main>
+    <script src="../JavaScript/script.js">
+    </script>
+    <script src="../JavaScript/script_detalhes.js">
+    </script>
+  </body>
+</html>

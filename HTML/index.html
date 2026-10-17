@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chevrolet | Juntos na direção</title>
+    <script>
+      if (!window.location.pathname.includes('/HTML/')) {
+        document.write('<base href="HTML/">');
+      }
+    </script>
+    <link rel="icon" href="../img/Logos/Favicon/chevrolet-favicon.png">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+  <body class="home-page">
+    <nav class="navbar navbar--home">
+      <a class="logo-chevrolet" href="index.html">
+        <img src="../img/Logos/NavBar/logo-removebg-preview.png" alt="Chevrolet">
+      </a>
+      <button class="mobile-menu" aria-label="Abrir menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="catalago_veiculos.html">Veículos</a></li>
+        <li><a href="comprar.html">Comprar</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="sobre.html">A Chevrolet</a></li>
+      </ul>
+      <div class="nav-acoes"><i class="fas fa-user"></i> Minha conta</div>
+    </nav>
+
+    <main>
+      <section class="home-hero">
+        <div class="home-hero__content">
+          <p class="home-kicker">CHEVROLET TRACKER</p>
+          <h1>Chegou a hora de<br>viver o novo.</h1>
+          <p class="home-hero__text">Tecnologia que acompanha o seu ritmo. Design que deixa cada caminho mais interessante.</p>
+          <div class="home-actions">
+            <a class="home-button home-button--primary" href="detalhes_veiculo.html?carro=tracker">Conheça a Tracker</a>
+            <a class="home-button home-button--ghost" href="catalago_veiculos.html">Ver todos os modelos</a>
+          </div>
+        </div>
+        <div class="home-hero__scroll">ROLE PARA EXPLORAR <span></span></div>
+      </section>
+
+      <section class="home-intro">
+        <p class="home-kicker">ESCOLHA O SEU CHEVROLET</p>
+        <div class="home-intro__row">
+          <h2>Feito para<br>o seu próximo passo.</h2>
+          <p>Da cidade à estrada, encontre veículos que combinam design, desempenho, conectividade e espaço para tudo que importa.</p>
+        </div>
+      </section>
+
+      <section class="home-showcase" aria-label="Modelos em destaque">
+        <a class="home-model home-model--dark" href="detalhes_veiculo.html?carro=onix">
+          <div class="home-model__meta"><span>HATCH</span><span>01</span></div>
+          <img src="../img/Gridcard/Onix Hatch/onix-premiere-azul-hatch.png" alt="Chevrolet Onix">
+          <div class="home-model__footer"><div><h3>Onix</h3><p>A partir de R$ 99.990</p></div><i class="fas fa-arrow-up"></i></div>
+        </a>
+        <a class="home-model home-model--light" href="detalhes_veiculo.html?carro=onixplus">
+          <div class="home-model__meta"><span>SEDAN</span><span>02</span></div>
+          <img src="../img/Gridcard/Onix Plus/onix-plus-premiere-sedan.png" alt="Chevrolet Onix Plus">
+          <div class="home-model__footer"><div><h3>Onix Plus</h3><p>A partir de R$ 106.790</p></div><i class="fas fa-arrow-up"></i></div>
+        </a>
+        <a class="home-model home-model--yellow" href="detalhes_veiculo.html?carro=montana">
+          <div class="home-model__meta"><span>PICAPE</span><span>03</span></div>
+          <img src="../img/Gridcard/Montana/flyout-montana.png" alt="Chevrolet Montana">
+          <div class="home-model__footer"><div><h3>Montana</h3><p>A partir de R$ 141.590</p></div><i class="fas fa-arrow-up"></i></div>
+        </a>
+        <a class="home-model home-model--blue" href="detalhes_veiculo.html?carro=equinoxev">
+          <div class="home-model__meta"><span>ELÉTRICO</span><span>04</span></div>
+          <img src="../img/Gridcard/Equinox EV/equinoxev.png" alt="Chevrolet Equinox EV">
+          <div class="home-model__footer"><div><h3>Equinox EV</h3><p>A partir de R$ 349.990</p></div><i class="fas fa-arrow-up"></i></div>
+        </a>
+      </section>
+
+      <section class="home-feature">
+        <div class="home-feature__visual"></div>
+        <div class="home-feature__copy">
+          <p class="home-kicker">MOBILIDADE EM MOVIMENTO</p>
+          <h2>Seu mundo muda.<br>Seu Chevrolet acompanha.</h2>
+          <p>Explore uma linha criada para diferentes estilos de vida, com soluções inteligentes para cada trajeto.</p>
+          <a class="home-text-link" href="catalago_veiculos.html">Explorar a linha Chevrolet <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </section>
+
+      <section class="home-journey">
+        <div class="home-journey__title"><p class="home-kicker">TUDO COMEÇA AQUI</p><h2>Uma jornada<br>do seu jeito.</h2></div>
+        <div class="home-journey__links">
+          <a href="comprar.html"><span>01</span><div><h3>Encontre o seu</h3><p>Compare modelos e versões.</p></div><i class="fas fa-arrow-right"></i></a>
+          <a href="comprar.html"><span>02</span><div><h3>Planeje a compra</h3><p>Escolha seu modelo ideal.</p></div><i class="fas fa-arrow-right"></i></a>
+          <a href="servicos.html"><span>03</span><div><h3>Cuide do seu Chevrolet</h3><p>Serviços para seguir em frente.</p></div><i class="fas fa-arrow-right"></i></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="home-footer">
+      <p>Juntos na direção<sup>™</sup></p>
+      <div><a href="catalago_veiculos.html">Veículos</a><a href="comprar.html">Comprar</a><a href="servicos.html">Serviços</a><a href="sobre.html">Institucional</a></div>
+      <small>© Chevrolet. Todos os direitos reservados.</small>
+    </footer>
+    <script src="../JavaScript/script.js"></script>
+  </body>
+</html>

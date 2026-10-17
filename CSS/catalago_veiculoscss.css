@@ -1,0 +1,259 @@
+body  {
+       margin: 0;
+       font-family: "Volvo Novum", "Helvetica Neue", Arial, sans-serif;
+       background-color: #fff;
+       color: #000;
+}
+  /* ===== NAVBAR ===== */ /* ========================================================== */ /* ESTILOS DA BARRA DE NAVEGAÇÃO (NAVBAR) E DROPDOWN */ /* ========================================================== */ .navbar  {
+       display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 5%;
+        background-color: white;
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+        box-sizing: border-box;
+}
+  /* Logo */ .logo-chevrolet  {
+        display: flex;
+       align-items: center;
+}
+ #logobutton  {
+       background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+}
+ #logobutton img  {
+       width: 120px;
+       height: auto;
+        display: block;
+}
+  /* Links Principais */ .nav-links  {
+       list-style: none;
+        display: flex;
+        gap: 30px;
+        margin: 0;
+       padding: 0;
+       align-items: center;
+}
+ .nav-links li a  {
+       text-decoration: none;
+        color: #333;
+       font-size: 16px;
+       font-weight: bold;
+        font-family: sans-serif;
+}
+  /* Ações (Iniciar Sessão) */ .nav-acoes  {
+       display: flex;
+       align-items: center;
+       gap: 20px;
+}
+ .nav-acoes .acao-link  {
+       text-decoration: none;
+       color: #333;
+       font-size: 16px;
+       display: flex;
+       align-items: center;
+}
+ .nav-acoes .acao-link i  {
+       font-size: 1.1em;
+       margin-right: 5px;
+        color: #333;
+}
+  /* --- ESTILOS DO DROPDOWN (Seta Centralizada) --- */ .nav-dropdown-anchor-point  {
+       position: relative;
+        padding: 0 5px;
+        display: flex;
+       align-items: center;
+}
+ .nav-dropdown-anchor-point .dropdown-toggle i  {
+       margin: 0;
+        font-size: 0.9em;
+        position: relative;
+       top: -2px;
+        transition: transform 0.3s ease;
+       color: #333;
+}
+  /* Submenu Flutuante */ .dropdown-menu  {
+       display: none;
+        position: absolute;
+        top: 150%;
+        left: 50%;
+        transform: translateX(-50%);
+   /* Centraliza o menu sob a seta */     min-width: 240px;
+        background-color: white;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border-top: 3px solid #333;
+       padding: 10px 0;
+       z-index: 20;
+        list-style: none;
+       margin: 0;
+}
+ .dropdown-menu li a  {
+       color: #333;
+       padding: 10px 20px;
+       text-decoration: none;
+       display: block;
+        font-weight: normal;
+}
+  /* Estados Ativos (para JavaScript) */ .nav-dropdown-anchor-point.open .dropdown-menu  {
+        display: block;
+}
+ .nav-dropdown-anchor-point.open .dropdown-toggle i  {
+        transform: rotate(180deg);
+}
+  /* ===== LAYOUT ===== */ .catalogo-container  {
+       display: flex;
+       width: 100%;
+}
+  /* ===== MENU LATERAL ===== */ .menu-lateral  {
+       width: 240px;
+       border-right: 1px solid #ddd;
+       padding: 40px 30px;
+       position: sticky;
+       top: 0;
+       height: 100vh;
+       background: #fff;
+}
+  .menu-lateral ul  {
+       list-style: none;
+       padding: 0;
+       margin: 0;
+}
+  .menu-lateral li  {
+       padding: 10px 0 10px 15px;
+       margin-bottom: 15px;
+       border-left: 3px solid transparent;
+       cursor: pointer;
+       transition: all 0.2s ease;
+}
+  .menu-lateral li h3  {
+       font-size: 17px;
+       font-weight: 700;
+       margin: 0;
+}
+  .menu-lateral li p  {
+       font-size: 14px;
+       color: #666;
+       margin: 5px 0 0 0;
+}
+  .menu-lateral li:hover  {
+       background: #f7f7f7;
+}
+  .menu-lateral li.ativo  {
+       background: #f7f7f7;
+       border-left: 3px solid #000;
+}
+  .comparar-modelos  {
+       display: block;
+       margin-top: 25px;
+       text-decoration: none;
+       font-weight: 600;
+       color: #000;
+       font-size: 15px;
+}
+  /* ===== CONTEÚDO ===== */ .catalogo-conteudo  {
+       flex: 1;
+       padding: 40px 60px;
+}
+  .categoria  {
+       display: none;
+       animation: fade 0.3s ease;
+}
+  .categoria.ativa  {
+       display: block;
+}
+  @keyframes fade  {
+       from  {
+     opacity: 0;
+     transform: translateY(10px);
+  }
+       to  {
+     opacity: 1;
+     transform: translateY(0);
+  }
+}
+  .secao-titulo  {
+       font-size: 24px;
+       font-weight: 700;
+       color: #000;
+       margin: 0 0 20px 0;
+}
+  /* ===== GRID ===== */ .modelos-grid  {
+       display: grid;
+       grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+       gap: 30px;
+}
+  .modelo-card  {
+       text-align: center;
+       background: #fff;
+       transition: 0.3s ease;
+       cursor: pointer;
+}
+  .modelo-card:hover  {
+       transform: translateY(-3px);
+}
+  .modelo-card img  {
+       width: 100%;
+       height: auto;
+}
+  .modelo-nome  {
+       font-size: 17px;
+       font-weight: 700;
+       margin-top: 10px;
+}
+  .modelo-preco  {
+       font-size: 15px;
+       color: #444;
+       margin-top: 5px;
+}
+  /* ===== RESPONSIVO ===== */ @media (max-width: 992px)  {
+       .catalogo-container  {
+             flex-direction: column;
+  }
+        .menu-lateral  {
+             width: 100%;
+             height: auto;
+             border-right: none;
+             border-bottom: 1px solid #ddd;
+  }
+        .catalogo-conteudo  {
+             padding: 20px;
+  }
+}
+  @media (max-width: 600px)  {
+       .modelos-grid  {
+             grid-template-columns: 1fr;
+  }
+}
+  /* ==========================================================    ANIMAÇÃO AO ROLAR (reveal)    ========================================================== */ .reveal  {
+     opacity: 0;
+     transform: translateY(60px);
+     transition: all 0.9s ease;
+}
+  .reveal.active  {
+     opacity: 1;
+     transform: translateY(0);
+}
+  /* ===============================    FORÇA: remover sublinhado / cor roxa em links dos cards    =============================== */  a.modelo-card, a.modelo-card:link, a.modelo-card:visited, a.modelo-card:hover, a.modelo-card:active  {
+     color: inherit !important;
+     text-decoration: none !important;
+     text-decoration-line: none !important;
+     text-decoration-color: transparent !important;
+     text-underline-offset: 0 !important;
+     text-decoration-thickness: 0 !important;
+     -webkit-text-decoration-color: transparent !important;
+     -webkit-text-decoration-line: none !important;
+}
+  /* filhos também */ a.modelo-card *  {
+     color: inherit !important;
+     text-decoration: none !important;
+     text-decoration-line: none !important;
+     -webkit-text-decoration-line: none !important;
+}
+  /* preserva foco para acessibilidade (teclado) */ a.modelo-card:focus  {
+     outline: 3px solid #007bff;
+     outline-offset: 4px;
+     text-decoration: none !important;
+}
